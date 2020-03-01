@@ -1,0 +1,151 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width:100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.portfolio__wrapper {
+    background:#2d303a;
+    border-bottom: solid 6px #323746;
+}
+
+.portfolio__title {
+    padding: 70px 40px 26px 40px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+
+.portfolio__description {
+    padding: 0 40px 12px 40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+}
+
+.portfolio__tags {
+    padding: 0 40px 20px 41px;
+}
+
+.portfolio__tags span {
+    color: #767e9e;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    border: solid 1px #666d89;
+    border-radius: 5px;
+    padding: 3px 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.portfolio__tags span.portfolio__tags_selected {
+    color: #dedede;
+    border: solid 1px #c5c5c5;
+    padding: 3px 6px;
+}
+
+.portfolio__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 610px;
+    padding: 0 40px 57px 40px;
+    overflow: hidden;
+}
+
+.portfolio__gallery-item { 
+    width: 220px;
+    height: 187px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.about-us__wrapper {
+    background: #f2f2f2;
+    border-bottom: solid 6px #fff;
+}
+
+.about-us__title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 68px 40px 27px 41px;
+}
+
+.about-us__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    padding: 0 40px;
+}
+
+.about-us__persons {
+    display: flex;    
+    padding: 46px 37px 60px 38px;    
+    justify-content: space-between;    
+}
+
+.persons-item img {
+    width: 304px;
+    height: 304px;
+}
+
+.persons-item h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;  
+    overflow: hidden;
+    padding: 10px 0 11px 0; 
+    max-width: 305px;
+    white-space: nowrap; /*запрет переноса строк*/
+    text-overflow: clip; /*запрет переноса строк*/
+}
+
+.persons-item p {
+    width: 305px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 22px;
+}
+
+.social-media {
+    width: 302px;
+    padding-left: 2px;
+}
+
+.social-media span {
+    margin-right: 2px;
+}
+
+.social-media img {
+    width: 34px;
+    height: 34px;
+}
