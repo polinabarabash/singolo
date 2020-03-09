@@ -182,7 +182,7 @@ main {
     font-family: 'Lato', sans-serif;
 }
 
-.our-services__bottom{
+.our-services__bottom {
     height: 6px;
     background-color: #ffffff;
 }
@@ -201,7 +201,7 @@ main {
     line-height: 30px;
     color: #767e9e;
     font-weight: 300;
-    text-align: left;          
+    text-align: justify;          
 }
 
 .services {
@@ -263,7 +263,7 @@ ul .services__description {
     line-height: 22px;
     color: #767e9e;   
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     display: inline-block;
 }
 
@@ -359,7 +359,7 @@ ul .services__description {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
     padding: 0 40px;
 }
 
@@ -395,7 +395,7 @@ ul .services__description {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     padding-bottom: 22px;
 }
 
@@ -438,7 +438,7 @@ ul .services__description {
     color: #f0d8d9;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
 }
 
 .getaquote__2-colums {
@@ -517,6 +517,10 @@ textarea {
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+}
+
+.getaquote__contacts p {
+    text-align: justify;
 }
 
 .getaquote__contacts ul {
