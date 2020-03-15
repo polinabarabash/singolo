@@ -608,3 +608,61 @@ textarea {
 .footer__social-media span:nth-child(3){
     margin-right: 3px;    
 }
+
+/*modal window*/
+.getaquote__modal-window {
+    display: block;
+}
+
+.getaquote__modal-window_hidden {
+    display: none;
+}
+
+.getaquote__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 48, 58, 0.39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.getaquote__modal {
+    position: relative;
+    border-radius: 10px;
+    background-color: #f0d8d9ff;
+    width: 675px;
+    min-height: 120px;
+    max-height: 90%;
+    overflow: auto;
+    padding: 15px;  
+    font-family: "Lato";  
+}
+
+.getaquote__modal p {
+    line-height: 24px;
+    font-family: "Lato"; 
+}
+
+.getaquote__modal-button { 
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    cursor: pointer;   
+    border-radius: 5px;
+    background-color: #d6564f;
+    font-size: 12px;
+    line-height: 24px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;   
+    border: none;
+}
+
+.getaquote__modal-button:hover {
+    color: #f0d8d9;    
+    transition: all 500ms;
+}

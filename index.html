@@ -189,13 +189,23 @@
                     <p class="getaquote__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     <div class="getaquote__2-colums">
                         <div class="getaquote__form">
-                            <form action="#" method="post">
+                            <form>
                                 <input type="text" name="name" placeholder="Name (Requiered)" required>
                                 <input type="email" name="email" placeholder="Email (Requiered)" required>
                                 <input type="text" name="subject" placeholder="Subject">
                                 <textarea name="description-project" rows="5" placeholder="Describe your project in detail...">Describe your project in detail...</textarea>
                                 <input type="submit" name="submit" value="Submit" class="form-button">
                             </form>
+                            <!--modal-->
+                            <div class="getaquote__modal-window getaquote__modal-window_hidden">
+                                <div class="getaquote__overlay">
+                                    <div class="getaquote__modal">
+                                        <div>Письмо отправлено</div>
+                                        <button class="getaquote__modal-button">OK</button>                                
+                                    </div>
+                                </div>
+                            </div>
+                            <!-------->
                         </div>                        
                         <div class="getaquote__contacts">
                             <h3>Contact Information</h3>
@@ -207,7 +217,7 @@
                             </ul>
                         </div>
                     </div>                        
-                </div>
+                </div>                    
             </section>
             <footer>
                 <div class="wrapper footer__wrapper">
