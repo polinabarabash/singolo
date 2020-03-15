@@ -91,32 +91,48 @@ const closeModalForm = () => {
 }
 
 const getDataFromForm = () => {
+    //name
+    const name = document.querySelector('input[name="name"]')
+        let pForName = document.createElement('p');
+        let n = document.createTextNode('Имя: ' + name.value);
+        pForName.appendChild(n);
+        document.querySelector('.getaquote__modal').appendChild(pForName);
+    //email
+    const email = document.querySelector('input[name="email"]')
+        let pForEmail = document.createElement('p');
+        let e = document.createTextNode('Email: ' + email.value);
+        pForEmail.appendChild(e);
+        document.querySelector('.getaquote__modal').appendChild(pForEmail);
     //subject
     const subject = document.querySelector('input[name="subject"]');    
     if (subject.value === 'Singolo' || subject.value === 'singolo') {
-        let p = document.createElement('p');
+        let pForSubject = document.createElement('p');
         let topic = document.createTextNode('Тема: ' + subject.value);
-        p.appendChild(topic);
-        document.querySelector('.getaquote__modal').appendChild(p);           
+        pForSubject.appendChild(topic);
+        document.querySelector('.getaquote__modal').appendChild(pForSubject);           
     } else {
-        let p = document.createElement('p');
+        let pForSubject = document.createElement('p');
         let topicNone = document.createTextNode('Без темы');
-        p.appendChild(topicNone);
-        document.querySelector('.getaquote__modal').appendChild(p);
+        pForSubject.appendChild(topicNone);
+        document.querySelector('.getaquote__modal').appendChild(pForSubject);
     } 
     //description
     const description = document.querySelector('textarea[name="description-project"]');    
     if (description.value === 'Portfolio project' || description.value === 'portfolio project') {       
-        let p = document.createElement('p');
+        let pForDescription = document.createElement('p');
         let descriptionProject = document.createTextNode('Описание: ' + description.value);      
-        p.appendChild(descriptionProject);
-        document.querySelector('.getaquote__modal').appendChild(p);                 
-    } else {        
-        let p = document.createElement('p');
+        pForDescription.appendChild(descriptionProject);
+        document.querySelector('.getaquote__modal').appendChild(pForDescription);                 
+    } else if (description.value === '') {        
+        let pForDescription = document.createElement('p');
         let descriptionProjectNone = document.createTextNode('Без описания'); 
-        p.appendChild(descriptionProjectNone);     
-        document.querySelector('.getaquote__modal').appendChild(p);
-    }          
-    
+        pForDescription.appendChild(descriptionProjectNone);     
+        document.querySelector('.getaquote__modal').appendChild(pForDescription);
+    } else {
+        let pForDescription = document.createElement('p');
+        let descriptionProjectFull = document.createTextNode('Описание: ' + description.value); 
+        pForDescription.appendChild(descriptionProjectFull);     
+        document.querySelector('.getaquote__modal').appendChild(pForDescription);
+    } 
 }
 

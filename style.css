@@ -478,7 +478,7 @@ input, textarea {
     border: none;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder{
     font-size: 12px;
     line-height: 38px;
     color: #f48c8f;
@@ -635,20 +635,19 @@ textarea {
     border-radius: 10px;
     background-color: #f0d8d9ff;
     width: 675px;
-    min-height: 120px;
+    min-height: 220px;
     max-height: 90%;
     overflow: auto;
-    padding: 15px;  
-    font-family: "Lato";  
+    padding: 15px;     
 }
 
 .getaquote__modal p {
-    line-height: 24px;
-    font-family: "Lato"; 
+    line-height: 24px;    
 }
 
 .getaquote__modal-button { 
     position: absolute;
+    margin-top: 15px;
     left: 15px;
     bottom: 15px;
     cursor: pointer;   
@@ -656,9 +655,7 @@ textarea {
     background-color: #d6564f;
     font-size: 12px;
     line-height: 24px;
-    color: #f48c8f;
-    font-family: "Lato";
-    font-weight: 400;   
+    color: #f48c8f;    
     border: none;
 }
 
