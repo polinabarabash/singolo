@@ -344,6 +344,11 @@ ul .services__description {
 
 }
 
+
+.portfolio__gallery-item_hidden {
+    display: none;
+}
+
 /*--about us--*/
 .about-us__wrapper {
     background: #f2f2f2;
