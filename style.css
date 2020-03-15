@@ -337,6 +337,13 @@ ul .services__description {
     overflow: hidden;
 }
 
+.portfolio__gallery-item_active {
+    border: 5px solid #F06C64;
+    width: 215px;
+    height: 182px;
+
+}
+
 /*--about us--*/
 .about-us__wrapper {
     background: #f2f2f2;
