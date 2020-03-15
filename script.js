@@ -1,8 +1,10 @@
 window.onload = function () {
     switchTabMenu();
     switchPortfolioTags();
+    borderedPortfolioImage();
 }
 
+//---navigation---
 const switchTabMenu = () => {
     //add click event to navigation
     const navigation = document.getElementById('navigation').addEventListener('click', (event) => {
@@ -17,6 +19,7 @@ const switchTabMenu = () => {
     })
 } 
 
+//---portfolio---
 const switchPortfolioTags = () => {
     //add click event to portfolio tags
     const tags = document.querySelector('.portfolio__tags').addEventListener('click', (event) => {
@@ -50,6 +53,15 @@ const hiddenAllPortfolioImage = () => {
     document.querySelectorAll('.portfolio__gallery-item').forEach(el => el.classList.add('portfolio__gallery-item_hidden'));
 };
 
-
+const borderedPortfolioImage = () => {
+    //add click event to portfolio image
+    const img = document.querySelector('.portfolio__gallery').addEventListener('click', (event) => {
+        //remove class bordered for another image
+        document.querySelectorAll('.portfolio__gallery-item img').forEach(el => el.classList.remove('portfolio__gallery-item_bordered'));
+        //add class bordered for selected image
+        console.log(event.target);
+        event.target.classList.add('portfolio__gallery-item_bordered');
+    })
+}
 
 

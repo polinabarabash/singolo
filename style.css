@@ -335,15 +335,14 @@ ul .services__description {
     align-items: center;    
     margin-bottom: 20px;
     overflow: hidden;
+    cursor: pointer;
 }
 
-.portfolio__gallery-item_active {
+.portfolio__gallery-item_bordered {
     border: 5px solid #F06C64;
     width: 215px;
     height: 182px;
-
 }
-
 
 .portfolio__gallery-item_hidden {
     display: none;
