@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+body, html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -27,8 +31,10 @@ p {
 
 /*--part1--*/
 /*--HEADER--*/
-.header {    
-    position: relative;
+.header {   
+    position: fixed;
+    top: 0; 
+    width: 100%;   
     z-index: 100;    
 }
 
@@ -92,6 +98,11 @@ p {
 }
 
 /*--SLIDER--*/
+.slider {
+    position: relative; 
+    margin-top: 95px;   
+}  
+
 .slider__wrapper {      
     display: flex;
     flex-wrap: wrap;
@@ -103,9 +114,6 @@ p {
 
 .slider h3 {
     display: none;
-}
-.slider {
-    position: relative;    
 }
 
 .slider__inner { 

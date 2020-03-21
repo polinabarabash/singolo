@@ -39,6 +39,7 @@ const sortPortfolioImage = (selectedTag) => {
     hiddenAllPortfolioImage();
     if (selectedTag.innerHTML === 'All') {
         document.querySelectorAll('.portfolio__gallery-item').forEach(el => el.classList.remove('portfolio__gallery-item_hidden'));
+        shuffleImage();
     }
     if (selectedTag.innerHTML === 'Web Design') {
         document.querySelectorAll('.web').forEach(el => el.classList.remove('portfolio__gallery-item_hidden'));
@@ -50,6 +51,12 @@ const sortPortfolioImage = (selectedTag) => {
         document.querySelectorAll('.artwork').forEach(el => el.classList.remove('portfolio__gallery-item_hidden'));
     }
 };
+
+const shuffleImage = () => {
+    let imageArr = document.querySelectorAll('.portfolio__gallery>div');  
+    imageArr.sort();  
+    console.log(imageArr);
+}
 
 const hiddenAllPortfolioImage = () => {
     document.querySelectorAll('.portfolio__gallery-item').forEach(el => el.classList.add('portfolio__gallery-item_hidden'));
@@ -85,7 +92,9 @@ const closeModalForm = () => {
         //clean modal windiw 
         let elemP = document.querySelectorAll('.getaquote__modal p').forEach(el => {
             document.querySelector('.getaquote__modal').removeChild(el);  
-        });        
+        });    
+        //reset form
+        document.querySelector('form').reset();    
              
     })
 }
