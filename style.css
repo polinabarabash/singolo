@@ -655,3 +655,249 @@ textarea {
     color: #f0d8d9;    
     transition: all 500ms;
 }
+
+/*--responsive--*/
+@media screen and (min-width:1020px){
+	
+}
+
+@media screen and (min-width:768px) and (max-width:1019px) {
+    .wrapper {
+        max-width: 768px;
+        margin: 0;
+    }    
+    .header__navigation {        
+        width: 75%;
+    }
+    /*-slider-*/
+    .slider__wrapper {        
+        height: 430px;
+    }
+    .slider__inner {        
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .iphone-vertical {
+        width: 181px;
+        height: 364px;       
+        margin-left: 51px;
+        margin-top: 0px;
+    }
+    .iphone-vertical img {
+        width: 181px;
+        height: 364px; 
+    }
+    .iphone-horizontal {       
+        width: 364px;
+        height: 181px;
+        margin-left: 51px;       
+        top: 41px;
+    }
+    .iphone-horizontal img{       
+        width: 364px;
+        height: 181px;
+    }
+    .arrow-left {        
+        margin-top: 160px;
+    }
+    .arrow-right {        
+        margin-top: 160px;
+        margin-left: 458px;
+    }
+    /*-our-services-*/
+    .our-services__wrapper {
+        padding-top: 50px;
+        height: 100%;
+    }
+    .layout-3-column {
+        margin-bottom: 40px;
+        margin-right: 75px;
+    }
+    /*-portfolio-*/
+    .portfolio__gallery {        
+        max-height: 816px;
+    }
+    /*-about us-*/
+    .persons-item img {
+        width: 220px;
+        height: 220px;
+    }  
+    .persons-item h3 {        
+        max-width: 220px;        
+    }    
+    .persons-item p {
+        width: 220px;        
+    }    
+    .social-media {
+        width: 220px;
+        padding-left: 2px;
+    }           
+    .social-media img {
+        width: 34px;
+        height: 34px;
+    }
+    /*-get a quote-*/
+    .getaquote__2-colums {        
+        padding-top: 30px;
+    }
+    .getaquote__form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:767px) {
+    .wrapper {
+        max-width: 375px;
+        margin: 0;
+    }    
+    .header__navigation {        
+       display: none;
+    }
+    /*-slider-*/
+    .slider__wrapper {        
+        height: 213px;
+    }
+    .slider__inner {        
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .iphone-vertical {
+        width: 89px;
+        height: 177px;       
+        margin-left: 35px;
+        margin-top: 0px;
+    }
+    .iphone-vertical img {
+        width: 89px;
+        height: 177px; 
+    }
+    .iphone-horizontal {       
+        width: 177px;
+        height: 89px;
+        margin-left: 20px;       
+        top: -5px;
+    }
+    .iphone-horizontal img {       
+        width: 177px;
+        height: 89px;
+    }
+    .arrow-left {        
+        margin-top: 68px;
+    }
+    .arrow-right {        
+        margin-top: 69px;
+        margin-left: 212px;
+    }
+    /*-our-services-*/
+    .our-services__wrapper {
+        padding-top: 30px; 
+        height: 100%;       
+    }
+    .our-services h2 {       
+        margin: 0 29px 26px 32px;
+    }
+    .our-services__wrapper > p {
+        margin: 0 29px 0 32px;
+    }
+    .layout-3-column {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0px;
+        margin: 30px 29px 0 32px;
+    }
+    /*-portfolio-*/
+    .portfolio__title {
+        padding: 48px 29px 26px 32px;
+    }
+    .portfolio__description {
+        padding: 0px 29px 11px 32px;
+    }
+    .portfolio__tags {
+        padding: 0 29px 20px 32px;
+    }
+    .portfolio__tags span { 
+        margin-right: 5px;
+    }
+    .portfolio__gallery {        
+        max-height: 850px;
+        padding: 0 29px 57px 32px;
+    }
+    .portfolio__gallery-item {
+        width: 150px;
+        height: 128px;
+    }
+    /*-about us-*/
+    .about-us__title {
+        padding: 33px 30px 25px 30px;
+    }
+    .about-us__description {
+        padding: 0 30px;
+    }
+    .about-us__persons {        
+        flex-wrap: wrap;
+        padding: 34px 30px 10px 31px;
+    }    
+    .persons-item img {
+        width: 314px;
+        height: 314px;
+    }  
+    .persons-item h3 {        
+        max-width: 314px;  
+        padding-bottom: 5px;      
+    }    
+    .persons-item p {
+        width: 314px; 
+        padding-bottom: 10px;       
+    }    
+    .social-media {
+        width: 314px;
+        padding-left: 0px;
+        padding-bottom: 25px;
+    }           
+    .social-media img {
+        width: 34px;
+        height: 34px;
+    }
+    /*-get a quote-*/
+    .getaquote__title {
+        padding: 48px 0 0 30px;
+    }
+    .getaquote__description {
+        padding: 27px 30px 0px 30px;
+    }
+    .getaquote__2-colums { 
+        padding: 30px 56px 30px 30px;
+        flex-wrap: wrap;        
+    }
+    .getaquote__form {
+        width: 100%;
+    }
+    .form-button {
+        width: 315px;
+    }
+    .getaquote__contacts {
+        width: 100%;
+    }
+    .getaquote__contacts h3 {
+        padding-top: 12px;
+    }
+    .getaquote__contacts p{
+        width: 315px;
+    }
+    .getaquote__contacts ul {        
+        padding: 12px 0 1px 0px;
+    }
+    .footer__copyright {
+        display: none;
+    }
+    .footer__social-media {       
+        margin: 0 auto;
+        padding: 20px 30px 14px 30px;
+    }
+}
+
+@media screen /*and (min-width:375px)*/ and (max-width:374px) {
+
+}
